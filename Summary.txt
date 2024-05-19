@@ -1,0 +1,79 @@
+Runner File
+
+
+				        TestNG						            Cucumber
+
+1. Approach			    TDD					    	             BDD
+
+2. Test Case			TestClass -> TestMethods (java)			Feature file  --> Scenarios (resources)
+
+3. Group Test			group parameter in			         	Tag scenario with @tagName and
+				        @Test annotation				       run with JUnit
+
+4. Runner			    xml file (resources)				    Java Class (jUnit Runner)  (java)
+
+5. Hooks Location		@BeforeMethod					        @Before @After
+			        	@AfterMethod					        Hooks - under steps package
+				        In BaseTest
+
+6. parameters			<parameter> tag in 		    	    	In scenario, we can pass data from feature file t
+			        	runner.xml file				        	using double quote "parameters"
+
+7. Data-Driven Testing	@DataProvider				    	    Scenario Outline and Examples keyword
+
+
+8. Data tables			-					                	We can use data tables when we have to fill up the user form on the website
+									                        	and we use | (pipe symbol)
+
+9. Report 			html/xml				                	html/json
+
+
+
+Projects
+
+1. Java
+2. Selenium
+3. TestNGConcepts
+4. CucumberConcepts
+5. TestNGFramework
+
+
+==========================Framework Steps==========================================
+1. Automation of two things
+	LoginTest
+	CartTest
+
+2. Assert
+
+3. Driver Set up -->> moved to BaseTest
+
+4. Introduction of utils
+	 DriverUtils (moved code from BaseTest to DriverUtils)
+
+5. Multi-Browser support
+
+6. config.properties
+   PropertyReader Utils
+
+7. Page Object Model
+
+
+test
+	Java
+
+		pages
+
+		test
+			BaseTest
+			LoginTest
+			CartTest
+
+		utils
+
+			DriverUtils
+			PropertyReader
+
+
+	Resources
+		config.property
+
