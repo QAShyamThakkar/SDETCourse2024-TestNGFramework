@@ -1,5 +1,8 @@
 package com.automation.test;
 
+import com.automation.pages.CartPage;
+import com.automation.pages.HomePage;
+import com.automation.pages.LoginPage;
 import com.automation.utils.DriverUtils;
 import com.automation.utils.PropertyReader;
 import org.openqa.selenium.WebDriver;
@@ -12,11 +15,19 @@ import java.time.Duration;
 public class BaseTest {
 
     WebDriver driver;
+    LoginPage loginPage;
+    HomePage homePage;
+    CartPage cartPage;
 
     @BeforeMethod
     public void setUp(){
+        DriverUtils.initDriver();
         driver = DriverUtils.getDriver();
-        driver.get(PropertyReader.getProperty("url"));
+
+        loginPage = new LoginPage();
+        homePage = new HomePage();
+        cartPage = new CartPage();
+
     }
 
     @AfterMethod

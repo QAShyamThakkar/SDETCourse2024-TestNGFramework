@@ -34,8 +34,7 @@ public class DriverUtils {
     }
 
     public static WebDriver getDriver() {
-        DriverUtils.initDriver();
-        return driver;
+       return driver;
     }
 
 
