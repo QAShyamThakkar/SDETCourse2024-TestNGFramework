@@ -28,7 +28,7 @@ public class LoginPage extends BasePage{
 
     public void doLogin() {
         userName.sendKeys(PropertyReader.getProperty("userName"));
-        password.sendKeys(PropertyReader.getProperty("password"));
+        password.sendKeys(PropertyReader.getProperty("password")+"123");
         logInBtn.click();
 
     }

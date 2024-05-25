@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation" verbose="1">
+    <test name="SuaceDemoTest">
+        <classes>
+            <class name="com.automation.test.LoginTest"/>
+            <class name="com.automation.test.CartTest"/>
+        </classes>
+    </test>
+
+</suite>

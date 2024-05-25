@@ -27,6 +27,8 @@ public class CartTest extends BaseTest{
 
         cartPage.verifyCartPage();
 
+
+
     }
 
 
